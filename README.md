@@ -1,3 +1,15 @@
+#Note:
+Things may not go as planned. There are compatibility issues with the default example getting stuck at creating switches .. s1.
+
+The original github repo (not the website) has updated instruction specifying the minimum OS that is supported. 
+The Container image from Docker hub is also causing issues. If you are compiling your own version then download the latest code and then build using docker.
+
+If docker throwing network device not found error try inserting these kernel modules on the host.
+```bash
+sudo modprobe bridge
+sudo modprobe br_netfilter
+```
+
 # Containernet
 
 <img align="left" width="200" height="200" style="margin: 30px 30px 0 0;" src="/assets/logo.png" />
